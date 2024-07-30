@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png">
+    <title>Instagram</title>
+    <style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    }
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    height: 75%;
+    width:355px;
+}
+
+.left{
+    height: 75%;
+    width: 450px;
+}
+
+.upper{
+    height: 70%;
+    
+}
+
+.mid{
+    height: 10%;
+    
+}
+
+.lower{
+    height: 20%;
+    
+}
+
+.logo{
+    height: 20%;
+    background-color: white;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.form{
+    height: 50%;
+    background-color: white;
+    justify-content: center;
+
+}
+
+.links{
+    height: 30%;
+    background-color: pink;
+}
+
+@media (max-width:680px){
+
+    .left{
+
+        display: none;
+    }
+
+    .right{
+
+        width: 50%;
+    }
+    
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 20px;
+   width: 100%;
+   text-align: center;
+   font-size: 13px;
+   align-content: stretch;
+}
+.a{
+    color: white;
+}
+#container {
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+    flex-direction: column;
+}
+
+section {
+    margin: 20px ;
+}
+
+.main-top {
+    width: 350px;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 50px 50px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb ;
+}
+
+.logo {
+    margin-bottom: 5px;
+}
+
+.logo img {
+    height: 50px;
+    margin: 0 auto;
+}
+
+.username,
+.password {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 8px 12px;
+    border: 1px solid #dbdbdb;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.login-btn {
+    width: 100%;
+    background-color: #3897f0;
+    border: 1px solid #3897f0;
+    padding: 6px 0;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.or {
+    flex: 1 1;
+    line-height: 50px;
+}
+
+.main-bottom a {
+    margin: 20px 0px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 37px;
+}
+
+.fa-facebook-f {
+    color: #fff;
+    border-radius: 2px;
+    font-size: 12px;
+    background-color: rgb(15, 15, 168);
+    width: 20px;
+    text-align: center;
+    height: 20px;
+    padding: 5px;
+}
+
+.bottom {
+    width: 350px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+    border: 1px solid #dbdbdb ;
+}
+
+.signUp a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #3897f0;
+}
+
+.app-section {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.app-section span {
+    font-size: 16px;
+}
+
+.images {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.images img {
+    margin: 0 5px;
+    height: 35px;
+}
+
+#btn{
+    border: none;
+}
+a:link{
+    text-decoration: none;
+    font-size: 15px;
+}
+.column1 {
+    height: 581.15px;
+    width: 200px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones.png?__makehaste_cache_breaker=HOgRclNOosk" alt="" width="450px" height="581.15px">
+        </div>
+        <div class="right">
+             <div class="main-top">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/800px-Instagram_logo.svg.png?20160616034027" />
+                        </div>
+                            <div>
+                                <input type="text" placeholder="Phone number, username, or email" class="username" />
+                                <div>
+                                    <input type="password" placeholder="Password" class="password" />
+                                </div>
+                                <input type="button" value="Log in" class="login-btn" />
+                            </div>
+            
+                            <span class="or"><hr style="position: relative;">OR</span>
+            
+                            <div class="main-bottom">
+                                <a href="" style="color: #385185;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHHQ1tYDFw8In3ArE11fy-HfaGgjkh5fxd_w&s" alt="" width="16px" height="16px"></i> Log in with Facebook </a><br>
+                                <a href="" style="color: #00376B; font-size: 12px;"> Forgot password? </a>
+                            </div>
+            
+                        </div>
+                        <div class="bottom">
+                            <div class="signUp">
+                                Don't have an account? <a href="#">Sign up</a>
+                            </div>
+                        </div>
+                        <div class="app-section">
+                            <span> Get the app. </span>
+                            <div class="images">
+                                <img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="googlePlay Image">
+                                <img src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png" alt="Microsoft Image">
+                            </div>
+                        </div>
+                    
+            
+                    <!-- Footer Section Starts from Here -->
+                        <div class="footer" >
+                            <div class="a">
+                            <a href="" style="color: #737373;" >Meta</a>&nbsp;&nbsp;&nbsp;
+                            <a href="" style="color: #737373;">About</a>&nbsp;&nbsp;&nbsp;
+                            <a href="" style="color: #737373;">Blog</a>&nbsp;&nbsp;&nbsp;
+                            <a href="" style="color: #737373;">Jobs</a>&nbsp;&nbsp;&nbsp;
+                            <a href="" style="color: #737373;">Help</a>&nbsp;&nbsp;&nbsp;
+                            <a href="" style="color: #737373;">API</a>&nbsp;&nbsp;&nbsp;
+                            <a href="" style="color: #737373;">Privacy</a>&nbsp;&nbsp;&nbsp;
+                            <a href="" style="color: #737373;">Terms</a>&nbsp;&nbsp;&nbsp;
+                            <a href="" style="color: #737373;">Locations</a>&nbsp;&nbsp;&nbsp;
+                            <a href="" style="color: #737373;">Instagram Lite</a>&nbsp;&nbsp;&nbsp;
+                            <a href="" style="color: #737373;">Threads</a>&nbsp;&nbsp;&nbsp;
+                            <a href="" style="color: #737373;">Contact Uploading & Non-Users</a>&nbsp;&nbsp;&nbsp;
+                            <a href="" style="color: #737373;">Meta Verified</a></br></br>
+                        </div>
+                        <div>
+                            <select name="" id="btn">
+                                <option value="English">English</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Punjabi">Punjabi</option>
+                                <option value="English (UK)">English (UK)</option>
+                                <option value="Gujarati">Gujarati</option>
+                            </select>
+                             &copy; 2024 Instagram from Meta
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+    </div>
+</body>
+</html>
